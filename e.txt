@@ -1,0 +1,38 @@
+// // Dropdown de ordenação
+// function OrdenarAvisosDropdown({
+//   ordenacao,
+//   setOrdenacao,
+// }: {
+//   ordenacao: Ordenacao;
+//   setOrdenacao: (ord: Ordenacao) => void;
+// }) {
+//     return (
+//         <DropdownMenu
+//           onOpenChange={(open: boolean) => console.log("dropdown open:", open)}
+//         >
+//           <DropdownMenuTrigger asChild>
+//             <Button variant="outline" className="flex items-center gap-2">
+//               Ordenar por
+//             </Button>
+//           </DropdownMenuTrigger>
+    
+//           <DropdownMenuContent sideOffset={8} align="start" className="w-56 z-50">
+//             <DropdownMenuLabel>Ordenação</DropdownMenuLabel>
+//             <DropdownMenuSeparator />
+//             <DropdownMenuRadioGroup
+//               value={ordenacao}
+//               onValueChange={(v: string) => setOrdenacao(v as Ordenacao)}
+//             >
+//               <DropdownMenuRadioItem value="maisRecente">
+//                 Data mais recente
+//               </DropdownMenuRadioItem>
+//               <DropdownMenuRadioItem value="maisAntiga">
+//                 Data mais antiga
+//               </DropdownMenuRadioItem>
+//               <DropdownMenuRadioItem value="az">A-Z</DropdownMenuRadioItem>
+//               <DropdownMenuRadioItem value="za">Z-A</DropdownMenuRadioItem>
+//             </DropdownMenuRadioGroup>
+//           </DropdownMenuContent>
+//         </DropdownMenu>
+//       );
+// }
